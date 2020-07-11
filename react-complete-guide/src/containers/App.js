@@ -28,8 +28,17 @@ class App extends Component {
   //   console.log("[App.js] componentWillMount");
   // }
 
+  shouldComponentUpdate(nextProps, nextState, nextContext) {
+    console.log("[App.js] shouldComponentUpdate");
+    return true;
+  }
+
   componentDidMount() {
     console.log("[App.js] componentDidMount");
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log("[App.js] componentDidUpdate");
   }
 
   nameChangedHandler = (event, id) => {

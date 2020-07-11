@@ -26,6 +26,7 @@ class Persons extends Component {
   //   console.log("[Persons.js] componentWillUpdate");
   // }
 
+  // The most used
   componentDidUpdate(prevProps, prevState, snapshot) {
     console.log("[Persons.js] componentDidUpdate");
     console.log(snapshot);
